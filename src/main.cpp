@@ -129,7 +129,7 @@ double Input(){
                 Print(1,1,"ERROR: TOO LITTLE \nCHARACTERS");
               }
             case KEYCODE_EXE: 
-					    while(num[1]!='_' |num[1]!='.'){
+					    while(num[1]!='_' and num[1]!='.'){
 						    double ret = num[1]-'0';
 						    int i=2;
 						    while(num[i]!='_'){
@@ -137,6 +137,7 @@ double Input(){
 						    	i++;
 						    }//num[i]!='_'
 						    return ret;
+							break;
               }
             case KEYCODE_X: Print(1,1,"No variables allowed in doubles");break;
             case KEYCODE_Y: Print(1,1,"No variables allowed in doubles");break;
