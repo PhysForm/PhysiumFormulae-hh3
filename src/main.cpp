@@ -6,7 +6,7 @@
 #include <sdk/calc/calc.h>
 
 APP_NAME("Physium Formulae")
-APP_AUTHOR("Guest-11111111")
+APP_AUTHOR("PhysiumFormulae-dev")
 APP_DESCRIPTION("The HHK3 version of Physium Formulae")
 APP_VERSION("1.0.0")
 
@@ -129,7 +129,7 @@ double Input(){
                 Print(1,1,"ERROR: TOO LITTLE \nCHARACTERS");
               }
             case KEYCODE_EXE: 
-					    while(num[1]!='_' and num[1]!='.'){
+					    while(num[1]!='_' && num[1]!='.'){
 						    double ret = num[1]-'0';
 						    int i=2;
 						    while(num[i]!='_'){
@@ -137,8 +137,8 @@ double Input(){
 						    	i++;
 						    }//num[i]!='_'
 						    return ret;
+              			} 
 							break;
-              }
             case KEYCODE_X: Print(1,1,"No variables allowed in doubles");break;
             case KEYCODE_Y: Print(1,1,"No variables allowed in doubles");break;
             case KEYCODE_Z: Print(1,1,"No variables allowed in doubles");break;
@@ -180,7 +180,7 @@ void cls(){
 
 
 int main() {
-    fillScreen(color(31,64,31));
+    	fillScreen(0xFFFF);
   		UPD();
   		Debug_SetCursorPosition(264,160);
 		Debug_PrintString("Physium Formulae",0);
@@ -197,7 +197,7 @@ int main() {
 				break;
 			};
 		}
-		fillScreen(color(31,64,31));
+		fillScreen(0xFFFF);
 		UPD();
 		Debug_SetCursorPosition(0,0);
   		Debug_PrintString("Physium Formulae\nClassPad", 0);
